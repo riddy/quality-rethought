@@ -13,6 +13,13 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <style>
+        .side-note {
+            font-style: italic;
+            color: grey;
+            font-size: 28px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,14 +52,13 @@
             </section>
             <section>
                 <h2>Perfect Quality!?</h2>
-                <div> Google search (number of results):</div>
+                <div> Google search: <span class="side-note">(number of results from 11.7.22)</span></div>
                 <div class="fragment">
-                    <span style="font-style: italic; color: grey; font-size: 28px;">
+                    <span style=">
 
                     </span>
                     <blockquote>
-                        "Tesla outage" - 7.920.000
-                        <br /> "Bosch outage" - 2.690.000
+                        " Tesla outage" - 7.920.000 <br /> "Bosch outage" - 2.690.000
                     </blockquote>
                 </div>
                 <div class="fragment">
@@ -76,9 +82,20 @@
                 </div>
             </section>
             <section>
+                <h2>Software (development) is increasingly complex</h2>
+                <img class="fragment" src="assets/img/pexels-photo-3689527.webp" alt="" width="200">
+                <img class="fragment" src="assets/img/AmazonandNetflixDeathStar.jpg" alt="" width="600">
+                <div class="fragment">
+                    We're building up on code, not only where we write it, but also on everything we depend on.
+                </div>
+            </section>
+            <section>
                 <h2>How to ensure quality then?</h2>
-                <div class="fragment">Rigorous <b style="color:darkorange"> testing </b>before launch.</div>
-                <div class="fragment">Constant <b style="color:darkorange"> updates</b> after launch.
+                <div class="fragment">Rigorous <b class="hljs-keyword"> testing </b>before launch.</div>
+                <!--Chaos Monkey is basically a script that runs continually in all Netflix environments, causing chaos by randomly 
+                    shutting down server instances. Thus, while writing code, Netflix developers are constantly operating in an 
+                    environment of unreliable services and unexpected outages. source: https://insights.sei.cmu.edu/blog/devops-case-study-netflix-and-the-chaos-monkey/-->
+                <div class="fragment">Constant <b class="hljs-keyword"> updates</b> after launch.
                     <div style="font-size:28px"> to meet technology changes and ensure a good user experience. </div>
                 </div>
             </section>
@@ -86,23 +103,24 @@
                 data-background-opacity="0.05">
                 <h2>Constant updates?</h2>
                 <!-- velocity metrics (MTTR, DF) die anderen beiden sind code quality metrics-->
-                <div class="fragment">DF <span style="font-style: italic; font-size: 28px;">(Deployment Frequency): The
-                        average time to fully resolve a failure.</span>
+                <div class="fragment">DF <span class="side-note">(Deployment Frequency): How often a team successfully
+                        releases software.</span>
                 </div>
-                <div class="fragment">MTTR <span style="font-style: italic; font-size: 28px;">(Mean Time To Recover):
+                <div class="fragment">MTTR <span class="side-note"">(Mean Time To Recover):
                         The average time to fully resolve a failure.</span>
                 </div><br />
-                <!--It's a key DevOps metric that can be used to measure the stability of a DevOps team, as noted by DevOps Research and Assessment (DORA).-->
-                <div class="fragment">DORA metrics<br /><span style="font-style: italic; font-size: 28px;"> enabled
-                        engineering managers to get clear views on their software development and
-                        delivery processes and improve DevOps performance. <br />Performers are qualified as Low,
-                        Medium,
-                        High, and Elite performers.</span></div>
+                <!--It's a key DevOps metric that can be used to measure the stability of a DevOps team, as noted by 
+                    DevOps Research and Assessment (DORA).-->
+                <div class=" fragment">DORA metrics<br /><span class="side-note"> enabled
+                            engineering managers to get clear views on their software development and
+                            delivery processes and improve DevOps performance.
+                            <!--br />Performers are qualified as Low, Medium, High, and Elite performers.</span-->
+                </div>
             </section>
             <section data-background-image="assets/img/pexels-photo-684385.webp" data-background-opacity="0.2">
                 <h2>User Experience?</h2>
                 <div class="fragment">One of the agile key elements: <br />a real customers' collaboration to provide
-                    continuous <b style="color:darkorange"> feedback. </b></div>
+                    continuous <b class="hljs-keyword"> feedback. </b></div>
                 <div class="fragment">Bring value to the user, quick! </div>
             </section>
 
@@ -120,22 +138,23 @@
                 </div>
             </section>
             <section>
-                <h3>Agile as a Path, not a Destination</h3>
+                <h3>Agile is a Path, not a Destination</h3>
                 <div class="fragment">
-                    Go and See
+                    It is not about frameworks or practices -<br/> but a <span class="hljs-keyword">mindset</span> and <span class="hljs-keyword">individuals</span>.
+                    <!-- manifesto https://www.agilealliance.org/agile101/the-agile-manifesto/-->
                 </div>
                 <div class="fragment">
-                    Stop and Fix
+                    It is about coping with <span class="hljs-keyword">uncertainty</span><br/> and reacting to change. 
                 </div>
                 <div class="fragment">
-                    kaizen at infinitum
+                    Most importantly: it is about <span class="hljs-keyword">focus</span><br/> and bringing value to a <span class="hljs-keyword">customer</span>.
                 </div>
             </section>
 
             <section>
                 <h2>Software Quality</h2>
                 <div class="fragment">Quality assurance is a lifelong process. </div>
-                <div class="fragment">You should strive for <b style="color:darkorange"> excellence, not perfection.</b>
+                <div class="fragment">You should strive for <b class="hljs-keyword"> excellence, not perfection.</b>
                 </div>
             </section>
             <section>
@@ -155,6 +174,9 @@
                 <li><a
                         href="https://study.com/academy/lesson/identifying-quick-wins-during-the-agile-transformation.html">There
                         is no such thing as bug free software.</a></li>
+                <li><a
+                        href="https://www.extremetech.com/computing/259977-software-increasingly-complex-thats-dangerous">Software
+                        is increasingly complex.</a></li>
                 <li><a href="https://waydev.co/dora-metrics/">DORA metrics .</a></li>
             </section>
             <section>
@@ -167,6 +189,12 @@
                             href="https://www.pexels.com/photo/stainless-details-of-engine-of-new-car-5158155/">Engine</a>
                     </li>
                     <li><a href="https://www.pexels.com/photo/blue-office-eraser-orange-35202/">Rubber</a>
+                    </li>
+                    <li><a href="https://www.pexels.com/photo/car-interior-with-focus-on-the-ignition-3689527/">Car
+                            Interior</a>
+                    </li>
+                    <li><a href="https://www.pexels.com/photo/car-interior-with-focus-on-the-ignition-3689527/">Deathstar
+                            Diagram</a>
                     </li>
                     <li><a
                             href="https://www.pexels.com/photo/close-up-photo-of-man-wearing-black-suit-jacket-doing-thumbs-up-gesture-684385/">Thumb
